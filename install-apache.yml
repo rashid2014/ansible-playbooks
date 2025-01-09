@@ -18,11 +18,11 @@
       yum:
         name: postgresql
         state: present
-    - name: Start postgresql
-      service:
-        name: postgresql
-        state: started
-        enabled: yes
+    # - name: Start postgresql
+    #   service:
+    #     name: postgresql
+    #     state: started
+    #     enabled: yes
     # - name: Install PostgreSQL repository (Amazon Linux 2)
     #   yum:
     #     name: https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm
