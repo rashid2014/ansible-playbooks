@@ -12,4 +12,15 @@
         name: httpd
         state: started
         enabled: yes
-        
+  
+  tasks:
+    - name: Ensure postgresql is at the latest version
+      ansible.builtin.yum:
+        name: postgresql
+        state: latest
+
+    - name: Ensure that postgresql is started
+      ansible.builtin.service:
+        name: postgresql
+        state: started
+
